@@ -1,0 +1,111 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Single+Day&display=swap');
+.sign-Up {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+}
+.signUp-page-image {
+  background-image: url("background.jpg");
+  height: 100%;
+  width: 40%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  object-fit: contain;
+}
+.signUp-page-image p {
+  font-size: 55px;
+  font-weight: 900;
+  line-height: 77px;
+  color: white;
+  margin-top: 90%;
+  margin-left: 10%;
+  font-family: "Roboto", sans-serif;
+}
+.SignUp-form {
+  background-color: black;
+  height: 100vh;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.SignUp-form h1 {
+  color: rgba(114, 219, 115, 1);
+  font-size: 67px;
+  font-weight: 400;
+  line-height: 93px;
+  margin: 15px 0px;
+  font-family: "Roboto", sans-serif;
+  font-family: "Single Day", cursive;
+}
+.input-box::placeholder {
+  font-family: DM Sans;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  padding-left: 10px;
+}
+.SignUp-form p {
+  color: white;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 34.92px;
+  margin-bottom: 45px;
+}
+.input-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.checkbox-text {
+  color: rgba(124, 124, 124, 1);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 27px;
+}
+.input-box {
+  height: 64px;
+  width: 518px;
+  margin-bottom: 25px;
+  background-color: rgba(41, 41, 41, 1);
+  border: none;
+}
+.checkBox {
+  background-color: rgba(217, 217, 217, 1);
+  height: 18px;
+  width: 18px;
+}
+.submit-button {
+  width: 518px;
+  height: 55px;
+  border-radius: 28px;
+  background-color: rgba(114, 219, 115, 1);
+  border: none;
+  color: white;
+  font-size: 29px;
+  font-weight: 600;
+  line-height: 31.52px;
+  margin-top: 20px;
+}
+.terms-conditions {
+  height: 100px;
+  max-width: 518px;
+  display: flex;
+  flex-direction: column;
+  margin: 30px auto;
+  text-align: left;
+}
+.terms-conditions p {
+  color: rgba(124, 124, 124, 1);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+}
+.policies {
+  color: rgba(114, 219, 115, 1);
+}
