@@ -1,0 +1,39 @@
+.names {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.selected-name {
+  width: 193px;
+  height: 52px;
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 31px;
+  background-color: rgba(20, 138, 8, 1);
+}
+.selected-name p {
+  font-family: Roboto;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0.02em;
+  margin-top: 10px;
+
+  color: white;
+}
+.delete-button {
+  font-family: Roboto;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+
+  color: rgba(8, 92, 0, 1);
+  border: none;
+  background-color: rgba(20, 138, 8, 1);
+}
+.error-message {
+  font-size: 27px;
+  color: red;
+  font-weight: 500;
+}

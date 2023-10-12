@@ -1,0 +1,36 @@
+.category-box {
+  display: grid;
+  grid-template-columns: repeat(3, 30%);
+  align-items: center;
+  margin-right: 90px;
+  justify-content: space-evenly;
+  grid-row-gap: 10px;
+  height: 676px;
+  width: 698px;
+  margin-top: 105px;
+  margin-left: 92px;
+}
+
+.category-box p {
+  color: white;
+  display: flex;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 47px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: 11px;
+}
+.boxes {
+  width: 200px;
+  height: 200px;
+  border: none;
+  margin-right: 42px;
+  border-radius: 25px;
+}
+#images {
+  height: 117px;
+  width: 173px;
+
+  margin-left: 12px;
+}

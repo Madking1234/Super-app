@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Login.css";
+import SelectCategory from "./selectCategory";
 
 function Login() {
   const [name, setName] = useState(() => {
@@ -22,6 +23,7 @@ function Login() {
     const parsedItem = JSON.parse(savedItem);
     return parsedItem || "";
   });
+  const [confirm, setConfirm] = useState(false);
   useEffect(() => {
     localStorage.setItem("name", JSON.stringify(name));
     localStorage.setItem("username", JSON.stringify(username));
@@ -31,7 +33,17 @@ function Login() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setConfirm(true);
   };
+  if (confirm) {
+    return (
+      <SelectCategory
+        to={{
+          pathname: "/selectCategory",
+        }}
+      />
+    );
+  }
 
   return (
     <div className="sign-Up">

@@ -1,0 +1,97 @@
+.main-page {
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+}
+.profile {
+  width: 892px;
+  height: 538.24px;
+  display: flex;
+  border-radius: 33.43px;
+  background-color: rgba(87, 70, 234, 1);
+  margin-top: 50px;
+  margin-left: 50px;
+}
+.profile-image {
+  width: 287.36px;
+  height: 532.2px;
+  border-radius: 329px;
+  padding: 37px 32px;
+}
+.profile-data {
+  display: flex;
+  flex-direction: column;
+}
+.user-data {
+  list-style-type: none;
+  height: 200px;
+  width: 500px;
+  padding-top: 80px;
+  padding-left: 50px;
+}
+.name-username {
+  font-family: Roboto;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 38px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: white;
+  padding-bottom: 10px;
+}
+.email {
+  font-family: Roboto;
+  font-size: 52px;
+  font-weight: 900;
+  line-height: 48px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: white;
+}
+.wether-app {
+  width: 892px;
+  border-radius: 33.43px;
+  height: 286px;
+  background-color: rgba(16, 23, 68, 1);
+  margin-top: 20px;
+  margin-left: 50px;
+}
+.date-time {
+  height: 85px;
+  width: 100%;
+  background-color: rgba(255, 74, 222, 1);
+  position: relative;
+  border-top-right-radius: 33.43px;
+  border-top-left-radius: 33.43px;
+  display: flex;
+}
+.date {
+  height: 50px;
+  width: 50px;
+  font-size: 20px;
+  color: white;
+}
+.choices {
+  display: flex;
+  height: 100%;
+  width: 553px;
+  padding: 57px;
+  flex-wrap: wrap;
+  overflow: auto;
+  gap: 23px;
+  margin-top: 30px;
+}
+.choice-name {
+  width: 200.51px;
+  height: 52.58px;
+  background-color: rgba(159, 148, 255, 1);
+  border-radius: 36.95px;
+  border: none;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  margin-top: 3px;
+  padding-top: 13px;
+}
