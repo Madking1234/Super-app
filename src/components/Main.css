@@ -1,13 +1,13 @@
 .main-page {
   height: 100vh;
-  width: 100%;
+  width: 63%;
   background-color: black;
   display: flex;
   flex-direction: column;
 }
 .profile {
-  width: 892px;
-  height: 538.24px;
+  width: 508px;
+  height: 319.24px;
   display: flex;
   border-radius: 33.43px;
   background-color: rgba(87, 70, 234, 1);
@@ -15,9 +15,9 @@
   margin-left: 50px;
 }
 .profile-image {
-  width: 287.36px;
-  height: 532.2px;
-  border-radius: 329px;
+  width: 152.36px;
+  height: 327.2px;
+  border-radius: 42px;
   padding: 37px 32px;
 }
 .profile-data {
@@ -26,16 +26,16 @@
 }
 .user-data {
   list-style-type: none;
-  height: 200px;
-  width: 500px;
-  padding-top: 80px;
-  padding-left: 50px;
+  height: 160px;
+  width: 355px;
+  padding-top: 51px;
+  padding-left: 1px;
 }
 .name-username {
   font-family: Roboto;
-  font-size: 30px;
+  font-size: 21px;
   font-weight: 400;
-  line-height: 38px;
+  line-height: 24px;
   letter-spacing: 0.02em;
   text-align: left;
   color: white;
@@ -43,49 +43,63 @@
 }
 .email {
   font-family: Roboto;
-  font-size: 52px;
+  font-size: 41px;
   font-weight: 900;
-  line-height: 48px;
+  line-height: 30px;
   letter-spacing: 0.02em;
   text-align: left;
   color: white;
 }
 .wether-app {
-  width: 892px;
+  width: 509px;
   border-radius: 33.43px;
-  height: 286px;
+  height: 203px;
   background-color: rgba(16, 23, 68, 1);
   margin-top: 20px;
   margin-left: 50px;
 }
 .date-time {
-  height: 85px;
+  height: 65px;
   width: 100%;
   background-color: rgba(255, 74, 222, 1);
   position: relative;
   border-top-right-radius: 33.43px;
   border-top-left-radius: 33.43px;
   display: flex;
+  justify-content: space-around;
 }
 .date {
-  height: 50px;
-  width: 50px;
-  font-size: 20px;
   color: white;
+  font-family: Roboto;
+  font-size: 31px;
+  font-weight: 600;
+  line-height: 78px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+.time {
+  font-family: Roboto;
+  font-size: 31px;
+  font-weight: 600;
+  line-height: 65px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: white;
+  padding-top: 5px;
 }
 .choices {
   display: flex;
-  height: 100%;
-  width: 553px;
-  padding: 57px;
+  height: 43%;
+  width: 339px;
+  /* padding: 57px; */
   flex-wrap: wrap;
   overflow: auto;
-  gap: 23px;
-  margin-top: 30px;
+
+  margin-top: 9px;
 }
 .choice-name {
-  width: 200.51px;
-  height: 52.58px;
+  width: 136.51px;
+  height: 41.58px;
   background-color: rgba(159, 148, 255, 1);
   border-radius: 36.95px;
   border: none;
@@ -93,5 +107,197 @@
   color: white;
   text-align: center;
   margin-top: 3px;
-  padding-top: 13px;
+  padding-top: 8px;
+}
+.weather-conditions {
+  display: flex;
+}
+.wether-report {
+  height: 70%;
+  width: 33%;
+}
+.wether-report p {
+  font-family: Roboto;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 44px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: white;
+  margin-top: 64px;
+}
+.tempreature {
+  height: 70%;
+  width: 33%;
+}
+.tempreature p {
+  font-family: Roboto;
+  font-size: 39px;
+  font-weight: 400;
+  line-height: 109px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: white;
+}
+.wind-humidity {
+  height: 70%;
+  width: 33%;
+}
+.wind {
+  display: flex;
+  flex-direction: row;
+  gap: 14px;
+  text-align: center;
+  width: 189px;
+  justify-content: center;
+  margin-top: 20px;
+}
+.humidity {
+  display: flex;
+  flex-direction: row;
+  gap: 18px;
+  text-align: center;
+  width: 187px;
+  justify-content: center;
+  margin-top: -2px;
+}
+.wind-condition p {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: white;
+}
+.humidity-condition {
+  font-family: Roboto;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: white;
+}
+#humidityimg {
+  padding-top: 5px;
+}
+#line {
+  margin-top: 37px;
+}
+.browse {
+  width: 179px;
+  height: 50.12px;
+  background-color: rgba(20, 138, 8, 1);
+  border-radius: 34.78px;
+  font-family: DM Sans;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  border: none;
+  color: white;
+  margin-top: 20px;
+}
+.profile-wether-notes {
+  display: flex;
+}
+.notes {
+  width: 470px;
+  height: 535px;
+
+  border-radius: 19px;
+  /* margin: 10px; */
+  margin-top: 52px;
+  margin-left: 54px;
+  background-color: rgba(241, 199, 91, 1);
+}
+.notes p {
+  font-family: Roboto;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  /* padding-top: 10px; */
+  margin-top: 27px;
+  margin-left: 39px;
+}
+.input-notes {
+  border: none;
+  background-color: rgba(241, 199, 91, 1);
+  height: 421px;
+  margin-top: 16px;
+  width: 350px;
+  margin-left: 40px;
+}
+.countdown-timer {
+  width: 1038px;
+  height: 248px;
+  border: 2px solid white;
+  border-radius: 19px;
+  margin-left: 49px;
+  margin-top: 16px;
+  background-color: rgba(30, 35, 67, 1);
+}
+.news {
+  width: 600px;
+  height: 802px;
+
+  border-radius: 15px;
+  margin-top: 52px;
+}
+#news-img {
+  border-top-right-radius: 16px;
+  border-top-left-radius: 16px;
+}
+
+.profile-wether-notes-news {
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+}
+.news-image-container {
+  position: relative;
+}
+
+#news-img {
+  width: 100%; /* Ensure the image covers the container */
+}
+
+.news-title {
+  position: absolute;
+  top: 455px;
+  left: 1200px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 15px;
+  font-size: 18px;
+  height: 100px;
+  /* width: 100px; */
+  width: 620px;
+}
+.description {
+  color: black;
+  height: 299px;
+  width: 100%;
+  background-color: white;
+  padding: 30px;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  overflow-x: hidden;
+}
+.final-page {
+  height: 40px;
+  width: 150px;
+  background-color: green;
+  margin-top: 10px;
+  margin-left: 450px;
+  border: none;
+  color: white;
+  font-size: 21px;
+  font-weight: 500;
+  text-align: center;
+  border-radius: 40px;
 }
