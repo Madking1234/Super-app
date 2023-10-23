@@ -53,7 +53,7 @@ function Main() {
   const wetherURL = `http://api.weatherapi.com/v1/current.json?key=7275327d4b2f4b9f84b141027230910&q=Chennai&aqi=no`;
   useEffect(() => {
     fetchData();
-  }, []);
+  });
   async function fetchData() {
     try {
       const response = await fetch(wetherURL);
@@ -77,7 +77,7 @@ function Main() {
 
   useEffect(() => {
     fetchNewsData();
-  }, []);
+  });
   async function fetchNewsData() {
     try {
       const response = await fetch(newsURL);
@@ -97,7 +97,7 @@ function Main() {
         <div className="profile-wether-notes">
           <div profile-wether>
             <div className="profile">
-              <img className="profile-image" src={ProfileImage}></img>
+              <img className="profile-image" src={ProfileImage} alt=""></img>
               <div className="profile-data">
                 <ul className="user-data">
                   <li className="name-username">{Name}</li>
@@ -121,15 +121,14 @@ function Main() {
               <div className="weather-conditions">
                 {wether && wether.condition && (
                   <div className="wether-report">
-                    <img></img>
                     <p>{wether.condition.text}</p>
                   </div>
                 )}
-                <img id="line" src={vector} height={70} />
+                <img id="line" src={vector} height={70} alt="" />
                 <div className="tempreature">
                   <p>{wether.feelslike_c}°C</p>
                 </div>
-                <img id="line" src={vector} height={70} />
+                <img id="line" src={vector} height={70} alt="" />
                 <div className="wind-humidity">
                   <div className="wind">
                     <img src={wind} alt="wind" height={40} width={30} />

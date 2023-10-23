@@ -39,6 +39,7 @@ function MoviePage({ movieCategories }) {
                   height: "15vh",
                   borderRadius: "12px",
                 }}
+                alt=""
               />
             </div>
           );
