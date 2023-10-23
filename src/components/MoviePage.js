@@ -23,7 +23,7 @@ function MoviePage({ movieCategories }) {
         .catch((err) => console.error(err));
     };
     fetchMovies();
-  }, []);
+  });
   return (
     <div>
       <p className="movie-categories">{movieCategories}</p>
