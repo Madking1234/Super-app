@@ -15,9 +15,9 @@ function SelectedCategory({ selectedNames, setSelectedNames }) {
 
   useEffect(() => {
     if (selectedNames.length < 3) {
-      setError(true); // Set the error state to true if less than 3 categories are selected.
+      setError(true);
     } else {
-      setError(false); // Clear the error state if 3 or more categories are selected.
+      setError(false);
     }
     const selectedCategoryNames = selectedNames.map(
       (category) => category.label

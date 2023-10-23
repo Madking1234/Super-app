@@ -73,7 +73,7 @@ function Main() {
     setNotes(e.target.value);
     localStorage.setItem("notes", JSON.stringify(e.target.value));
   }
-  const newsURL = `https://newsapi.org/v2/everything?q=tesla&from=2023-09-18&sortBy=publishedAt&apiKey=aceab26de84740a3aeb3d3d32bbb1c60`;
+  const newsURL = `https://newsapi.org/v2/everything?q=tesla&from=2023-09-23&sortBy=publishedAt&apiKey=b3624a8877a643909f70e8ddf9065221`;
 
   useEffect(() => {
     fetchNewsData();
@@ -174,16 +174,16 @@ function Main() {
           <div className="news-image-description-container">
             <img
               id="news-img"
-              src={news[0].urlToImage}
-              alt={news[0].title}
+              src={news[1].urlToImage}
+              alt={news[1].title}
               height={500}
               width={596}
             />
             <div className="news-title" style={{ color: "white" }}>
-              {news[0].title}
+              {news[1].title}
             </div>
             <div className="description">
-              <p>{news[0].content}</p>
+              <p>{news[1].content}</p>
             </div>
           </div>
         )}

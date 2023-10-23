@@ -1,30 +1,33 @@
 import React, { useEffect, useState } from "react";
+import nextPage from "./nextPage.png";
+import "./Movie.css";
+import { Navigate, useNavigate } from "react-router-dom";
+import MoviePage from "./MoviePage";
 
 function Movie() {
-  const [movie, setMovie] = useState([]);
-  const url =
-    "https://unogs-unogs-v1.p.rapidapi.com/search/titles?order_by=date&type=movie";
-  const options = {
-    method: "GET",
-    headers: {
-      "X-RapidAPI-Key": "403607ab07msh8fc31773d3b13cbp19e255jsnd6135690f409",
-      "X-RapidAPI-Host": "unogs-unogs-v1.p.rapidapi.com",
-    },
+  const movieCategories = JSON.parse(
+    window.localStorage.getItem("selectedCategoryNames")
+  );
+  console.log(movieCategories);
+  const Navigate = useNavigate();
+  const handleMain = (e) => {
+    Navigate("/Main");
+    e.preventDefault();
   };
-  useEffect(() => {
-    fetchMovieData();
-  }, []);
-  async function fetchMovieData() {
-    try {
-      const response = await fetch(url, options);
-      const result = await response.text();
-      setMovie(result.results);
-      console.log(movie);
-    } catch (error) {
-      console.error(error);
-    }
-  }
-  return <div>Movie</div>;
+  return (
+    <div className="movie-page">
+      <div className="tag-button">
+        <p id="title">Super app</p>
+        <div onClick={handleMain}>
+          <img id="change-page" src={nextPage} alt="" />
+        </div>
+      </div>
+      <p className="entertainment">Entertainment according to your choice</p>
+      {movieCategories.map((movie) => (
+        <MoviePage movieCategories={movie} />
+      ))}
+    </div>
+  );
 }
 
 export default Movie;

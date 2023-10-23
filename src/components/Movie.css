@@ -1,0 +1,36 @@
+.movie-page {
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  overflow: auto;
+}
+.tag-button {
+  display: flex;
+  width: 100%;
+  height: 150px;
+  justify-content: space-between;
+  padding: 48px 128px;
+}
+#change-page {
+  background: none;
+  border: none;
+  border-radius: 50%;
+}
+#title {
+  font-family: Single Day;
+  font-size: 47px;
+  font-weight: 400;
+  line-height: 66px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(114, 219, 115, 1);
+}
+.entertainment {
+  font-family: Roboto;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 42px;
+  letter-spacing: 0.02em;
+  margin-left: 174px;
+  color: white;
+}
