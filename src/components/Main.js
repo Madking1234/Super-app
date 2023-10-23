@@ -49,7 +49,7 @@ function Main() {
       clearInterval(timeIntervalId);
     };
   }, []);
-  const wetherAPI = "7275327d4b2f4b9f84b141027230910";
+
   const wetherURL = `http://api.weatherapi.com/v1/current.json?key=7275327d4b2f4b9f84b141027230910&q=Chennai&aqi=no`;
   useEffect(() => {
     fetchData();

@@ -97,9 +97,8 @@ function SelectCategory() {
   const nextPage = (e) => {
     e.preventDefault();
     if (selectedNames.length < 3) {
-      // If less than 3 categories are selected, do nothing and display an error in SelectedCategory component.
     } else {
-      navigate("/Main"); // Navigate to the next page.
+      navigate("/Main");
     }
   };
 

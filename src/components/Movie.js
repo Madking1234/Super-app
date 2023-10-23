@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import nextPage from "./nextPage.png";
 import "./Movie.css";
-import { Navigate, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import MoviePage from "./MoviePage";
 
 function Movie() {
