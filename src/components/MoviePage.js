@@ -4,7 +4,6 @@ import "./MoviePage.css";
 function MoviePage({ movieCategories }) {
   const [movies, setMovies] = useState([]);
 
-  console.log(movies);
   useEffect(() => {
     const options = {
       method: "GET",

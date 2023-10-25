@@ -4,9 +4,11 @@ import ProfileImage from "./profile.png";
 import vector from "./vector.png";
 import wind from "./wind.png";
 import humidity from "./Group.png";
+import News from "./news.png";
 import { useNavigate } from "react-router-dom";
 function Main() {
   const [news, setNews] = useState([]);
+  console.log(news);
   const [notes, setNotes] = useState("");
 
   const [wether, setWether] = useState([]);
@@ -73,7 +75,7 @@ function Main() {
     setNotes(e.target.value);
     localStorage.setItem("notes", JSON.stringify(e.target.value));
   }
-  const newsURL = `https://newsapi.org/v2/everything?q=tesla&from=2023-09-23&sortBy=publishedAt&apiKey=b3624a8877a643909f70e8ddf9065221`;
+  const newsURL = `https://newsdata.io/api/1/news?apikey=pub_318267de86be4f724216131ea9d5ad9e4212e&q=pizza`;
 
   useEffect(() => {
     fetchNewsData();
@@ -82,7 +84,7 @@ function Main() {
     try {
       const response = await fetch(newsURL);
       const jsonData = await response.json();
-      setNews(jsonData.articles);
+      setNews(jsonData);
     } catch (e) {
       console.log("error", e);
     }
@@ -169,23 +171,24 @@ function Main() {
         </div>
       </div>
       <div className="news">
-        {news.length > 0 && (
-          <div className="news-image-description-container">
-            <img
-              id="news-img"
-              src={news[1].urlToImage}
-              alt={news[1].title}
-              height={500}
-              width={596}
-            />
-            <div className="news-title" style={{ color: "white" }}>
-              {news[1].title}
-            </div>
-            <div className="description">
-              <p>{news[1].content}</p>
-            </div>
+        <div className="news-image-description-container">
+          <img id="news-img" src={News} alt="" height={500} width={596} />
+          <div className="news-title" style={{ color: "white" }}>
+            Want to climb Mount Everest?
           </div>
-        )}
+          <div className="description">
+            <p>
+              In the years since human beings first reached the summit of Mount
+              Everest in 1953, climbing the world’s highest mountain has changed
+              dramatically. Today, hundreds of mountaineers manage the feat each
+              year thanks to improvements in knowledge, technology, and the
+              significant infrastructure provided by commercially guided
+              expeditions that provide a veritable highway up the mountain for
+              those willing to accept both the......
+            </p>
+          </div>
+        </div>
+
         <button className="final-page" onClick={handleBrowse}>
           Browse
         </button>
