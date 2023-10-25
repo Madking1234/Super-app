@@ -7,8 +7,6 @@ import humidity from "./Group.png";
 import News from "./news.png";
 import { useNavigate } from "react-router-dom";
 function Main() {
-  const [news, setNews] = useState([]);
-  console.log(news);
   const [notes, setNotes] = useState("");
 
   const [wether, setWether] = useState([]);
@@ -75,20 +73,7 @@ function Main() {
     setNotes(e.target.value);
     localStorage.setItem("notes", JSON.stringify(e.target.value));
   }
-  const newsURL = `https://newsdata.io/api/1/news?apikey=pub_318267de86be4f724216131ea9d5ad9e4212e&q=pizza`;
 
-  useEffect(() => {
-    fetchNewsData();
-  }, []);
-  async function fetchNewsData() {
-    try {
-      const response = await fetch(newsURL);
-      const jsonData = await response.json();
-      setNews(jsonData);
-    } catch (e) {
-      console.log("error", e);
-    }
-  }
   const navigate = useNavigate();
   const handleBrowse = () => {
     navigate("/Movie");
